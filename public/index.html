@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iron Front 1945</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="overlay" class="visible">
+      <div class="panel">
+        <p class="tag">WW2 3D Arena</p>
+        <h1>Iron Front 1945</h1>
+        <label for="nameInput">Callsign</label>
+        <input id="nameInput" value="Ranger" maxlength="20" />
+        <button id="joinBtn">Deploy</button>
+      </div>
+    </div>
+
+    <div id="hud">
+      <div id="crosshair"></div>
+      <div id="statusBox">
+        <div id="health">HP: 100</div>
+        <div id="kills">K: 0</div>
+      </div>
+      <div id="message">Join the firefight.</div>
+    </div>
+
+    <script src="https://cdn.socket.io/4.8.1/socket.io.min.js"></script>
+    <script type="module" src="./client.js"></script>
+  </body>
+</html>

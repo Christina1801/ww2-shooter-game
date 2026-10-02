@@ -1,0 +1,50 @@
+# Iron Front 1945
+
+A lightweight 3D multiplayer squad shooter prototype inspired by tactical shooters like Counter-Strike. It is built with Node.js, Express, Socket.IO, and Three.js, and is designed to run locally in the browser with multiple players connecting to the same room.
+
+## Features
+
+- 3D arena environment with simple WW2 styling
+- First-person shooter controls (WASD + mouse look)
+- Networked multiplayer via Socket.IO
+- Team-based player colors
+- Health, kills, and respawn loop
+- Browser-based setup with no build step required
+
+## Run locally
+
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Start the server:
+   ```bash
+   npm start
+   ```
+3. Open the app:
+   - http://localhost:3000
+4. Open more tabs or browser windows on the same machine or LAN to play with other players.
+
+## Controls
+
+- W, A, S, D: move
+- Mouse: look around
+- Left click: shoot
+- Click the game area to lock the mouse pointer
+
+## Notes
+
+This is a compact prototype rather than a full AAA shooter. It focuses on the core feel: fast arena gunplay, multiplayer movement, and a WW2 atmosphere.
+
+## Future upgrades
+
+- Buy system and round-based gameplay
+- Better map design and cover elements
+- More realistic weapons and recoil
+- Bullet traces, hit markers, and sound effects
+- Dedicated lobby and matchmaking
+- Teams / rounds / bomb objectives
+
+## License
+
+MIT

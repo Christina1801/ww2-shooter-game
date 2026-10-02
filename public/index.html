@@ -11,18 +11,55 @@
       <div class="panel">
         <p class="tag">WW2 3D Arena</p>
         <h1>Iron Front 1945</h1>
-        <label for="nameInput">Callsign</label>
-        <input id="nameInput" value="Ranger" maxlength="20" />
+
+        <div class="field-row">
+          <label for="nameInput">Callsign</label>
+          <input id="nameInput" value="Ranger" maxlength="20" />
+        </div>
+
+        <div class="field-row">
+          <label for="teamSelect">Team</label>
+          <select id="teamSelect">
+            <option value="Counter">Counter</option>
+            <option value="Terror">Terror</option>
+          </select>
+        </div>
+
+        <div class="field-row">
+          <label for="mapSelect">Map</label>
+          <select id="mapSelect">
+            <option value="dust">Dust</option>
+            <option value="mirage">Mirage</option>
+          </select>
+        </div>
+
         <button id="joinBtn">Deploy</button>
       </div>
     </div>
 
     <div id="hud">
+      <div id="topBar">
+        <div class="hud-pill">MAP: <span id="mapName">DUST</span></div>
+        <div class="hud-pill">ROUND: <span id="round">R1</span></div>
+        <div class="hud-pill">PHASE: <span id="phase">BUY</span></div>
+        <div class="hud-pill">TIME: <span id="timer">15s</span></div>
+      </div>
+
+      <div id="scoreBar">
+        <span>CT <strong id="scoreCT">0</strong></span>
+        <span> - </span>
+        <span>T <strong id="scoreT">0</strong></span>
+      </div>
+
       <div id="crosshair"></div>
+
       <div id="statusBox">
         <div id="health">HP: 100</div>
-        <div id="kills">K: 0</div>
+        <div id="money">$800</div>
+        <div id="weapon">USP</div>
+        <div id="ammo">12 / 24</div>
       </div>
+
       <div id="message">Join the firefight.</div>
     </div>
 
